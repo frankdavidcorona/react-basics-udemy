@@ -45,6 +45,32 @@ export default function App() {
             borderWidth: 1
           }
         ]
+      },
+      options: {
+        responsive: true,
+        legend: {
+          position: "bottom"
+        },
+        scales: {
+          xAxes: [
+            {
+              display: true,
+              scaleLabel: {
+                display: true
+              }
+            }
+          ],
+          yAxes: [
+            {
+              display: true,
+              ticks: {
+                beginAtZero: true,
+                // steps: 10,
+                stepValue: 5
+              }
+            }
+          ]
+        }
       }
     });
   }, [chartRef]);
